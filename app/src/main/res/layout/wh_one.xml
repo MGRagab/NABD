@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+              android:background="@color/colorPrimary"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/img"
+    />
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="157dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/nabdLogo"
+        android:src="@drawable/wh_logo" />
+
+    <com.appventure.nabd.CustomViews.GESSLightTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtText"
+        android:layout_below="@+id/nabdLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="16dp"
+        android:textSize="12dp"
+        android:layout_marginRight="48dp"
+        android:gravity="center"
+        android:text="تابع مصادرك المفضلة من السعودية، مصر، الكويت، قطر، الإمارات، البحرين، ،فلسطين، الأردن، المغرب، تونس، ليبيا، اليمن، لبنان، سوريا، عمان، العراق، السودان و مصادر عربية وعالمية أخرى"
+        android:textColor="@android:color/white" />
+
+    <com.appventure.nabd.CustomViews.GESSButton
+        android:id="@+id/btnChooseRes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnSignIN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@color/primary_text"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:text="أختر مصادرك"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <com.appventure.nabd.CustomViews.GESSButton
+        android:id="@+id/btnSignIN"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtNoAccount"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/transparent_white_button"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:text="تسجيل دخول"
+        android:textColor="@android:color/white"
+        android:textSize="16dp" />
+
+    <com.appventure.nabd.CustomViews.GESSLightTextView
+        android:id="@+id/txtNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:layout_above="@+id/indicator_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:padding="4dp"
+        android:text="لايوجد حساب شخصى؟ إنشاء حساب جديد"
+        android:textColor="@android:color/white"
+        android:textSize="12dp" />
+
+</RelativeLayout>
+</LinearLayout>

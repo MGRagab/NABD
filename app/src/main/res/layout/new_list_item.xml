@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/itemHeader"
+        android:layout_width="fill_parent"
+        android:layout_height="72dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemHeaderImage"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#CBCBCB"
+            app:civ_border_width="1dp"/>
+
+        <TextView
+            android:id="@+id/itemHeaderTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@id/itemHeaderImage"
+            android:layout_toRightOf="@+id/itemHeaderTime"
+            android:gravity="right"
+            android:text="المصرى اليوم"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:id="@+id/itemHeaderType"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/itemHeaderTitle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_toLeftOf="@id/itemHeaderImage"
+            android:layout_toRightOf="@+id/itemHeaderTime"
+            android:gravity="right"  android:textSize="16sp"
+            android:text="جريدة يومية"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/itemHeaderTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:gravity="left"
+            android:text="الأن"
+            android:textColor="@android:color/black"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/itemImage"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/itemHeader"
+        android:background="@color/colorPrimary"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/itemTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/itemImage"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="right"
+        android:text="هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. "
+        android:textColor="@color/colorPrimary"
+        />
+
+    <TextView
+        android:id="@+id/itemCommentsAndSaves"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/itemTitle"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="3 تعليقات "
+        android:gravity="center|right"
+        android:layout_alignTop="@+id/icons"
+        android:layout_alignBottom="@+id/icons"
+        android:layout_toRightOf="@+id/icons"
+        android:textColor="@android:color/black"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/icons"
+        android:orientation="horizontal"
+        android:layout_below="@+id/itemTitle"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnShare"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/share_icon"/>
+        <ImageView
+            android:id="@+id/btnFav"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/fav_icon"/>
+        <ImageView
+            android:id="@+id/btnComment"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@drawable/comments_icon"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

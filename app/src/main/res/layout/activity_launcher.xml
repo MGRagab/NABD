@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.appventure.nabd.LauncherActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+
+
+    <com.flyco.pageindicator.indicator.FlycoPageIndicaor xmlns:fpi="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/indicator_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        fpi:fpi_cornerRadius="5dp"
+        fpi:fpi_gap="4dp"
+        fpi:fpi_height="5dp"
+        fpi:fpi_selectColor="@color/primary_text"
+        fpi:fpi_unselectColor="#77FFFFFF"
+        fpi:fpi_width="5dp" />
+</RelativeLayout>

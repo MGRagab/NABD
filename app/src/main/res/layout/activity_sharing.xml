@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/TBlack"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="انشر"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:id="@+id/txtShare"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"
+        android:id="@+id/lineSeprator"
+        android:orientation="vertical"
+        android:layout_below="@+id/txtShare"
+        android:layout_margin="16dp"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/lineSeprator"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/facebook"
+                    android:id="@+id/shareFB"
+                    android:layout_marginTop="16dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/twitter"
+                    android:id="@+id/sharetw"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/shareFB"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/instagram"
+                    android:id="@+id/shareInsta"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/sharetw"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/google"
+                    android:id="@+id/shareGoogle"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/shareInsta"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/email"
+                    android:id="@+id/shareEmail"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/shareGoogle"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/sms"
+                    android:id="@+id/shareSms"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/shareEmail"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/copylink"
+                    android:id="@+id/shareCopy"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/shareSms"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/closeshare"
+                    android:id="@+id/closeShare"
+                    android:padding="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_below="@+id/shareCopy"
+                    android:clickable="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
